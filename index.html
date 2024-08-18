@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Página HTML</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        header, footer { background: #f8f9fa; padding: 10px; text-align: center; }
+        section { margin: 10px 0; }
+        article { margin: 10px 0; }
+        nav { background: #e9ecef; padding: 10px; }
+        .container { width: 80%; margin: 0 auto; }
+        table { width: 100%; border-collapse: collapse; }
+        table, th, td { border: 1px solid black; }
+        th, td { padding: 8px; text-align: left; }
+        img { max-width: 100%; }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Minha Página HTML</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="home">
+            <h2>Seção Home</h2>
+            <p>Bem-vindo à nossa página inicial.</p>
+            <p>Aqui está um parágrafo de exemplo.</p>
+            <p><a href="https://example.com">Este é um link para um site externo.</a></p>
+            <p><strong>Texto em negrito</strong> e <em>texto em itálico</em>.</p>
+        </section>
+
+        <section id="about">
+            <h2>Seção Sobre</h2>
+            <article>
+                <h3>Artigo 1</h3>
+                <p>Informações sobre o primeiro artigo.</p>
+                <blockquote>
+                    <p>Esta é uma citação de exemplo.</p>
+                </blockquote>
+            </article>
+            <article>
+                <h3>Artigo 2</h3>
+                <p>Informações sobre o segundo artigo.</p>
+            </article>
+        </section>
+
+        <section id="contact">
+            <h2>Seção Contato</h2>
+            <form action="/submit-form" method="post">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+                <br>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+
+        <section>
+            <h2>Tabela de Exemplo</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Header 1</th>
+                        <th>Header 2</th>
+                        <th>Header 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Row 1 Col 1</td>
+                        <td>Row 1 Col 2</td>
+                        <td>Row 1 Col 3</td>
+                    </tr>
+                    <tr>
+                        <td>Row 2 Col 1</td>
+                        <td>Row 2 Col 2</td>
+                        <td>Row 2 Col 3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Imagem de Exemplo</h2>
+            <img src="https://via.placeholder.com/800x400" alt="Imagem de exemplo">
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Meu Site. Todos os direitos reservados.</p>
+        <address>
+            <p>Endereço: Rua Exemplo, 123, Cidade, País</p>
+        </address>
+    </footer>
+</body>
+
+</html>
